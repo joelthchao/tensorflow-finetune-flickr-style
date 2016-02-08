@@ -5,8 +5,8 @@ from dataset import Dataset
 from network import *
 
 # Dataset path
-train_list = '/tmp3/joel1211/tensorflow_finetune/data/flickr_style/train.txt'
-test_list = '/tmp3/joel1211/tensorflow_finetune/data/flickr_style/test.txt'
+train_list = '/path/to/data/flickr_style/train.txt'
+test_list = '/path/to/data/flickr_style/test.txt'
 
 # Learning params
 learning_rate = 0.001
