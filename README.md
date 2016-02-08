@@ -5,7 +5,7 @@ Please refer to the example from the Caffe website.
 
 http://caffe.berkeleyvision.org/gathered/examples/finetune_flickr_style.html
 
-Also we modify the network.py from repository
+Also we modify the network.py from repository:
 
 https://github.com/ethereon/caffe-tensorflow
 
@@ -18,7 +18,7 @@ $ python assemble_data.py
 
 ### Download the trained model
 
-Please follow the tutorial from and extract caffenet.npy
+Please follow the tutorial and extract caffenet.npy
 
 https://github.com/ethereon/caffe-tensorflow
 
