@@ -1,13 +1,9 @@
 # tensorflow-finetune-flickr-style
 
 In this project, we use flickr style dataset to demonstrate finetune in TensorFlow.
-Please refer to the example from the Caffe website.
+The details please refer to the example from the [Caffe website](http://caffe.berkeleyvision.org/gathered/examples/finetune_flickr_style.html)
 
-http://caffe.berkeleyvision.org/gathered/examples/finetune_flickr_style.html
-
-Also we modify the network.py from repository:
-
-https://github.com/ethereon/caffe-tensorflow
+Thank @ethereon for his code. We modify the network.py from [caffe-tensorflow](https://github.com/ethereon/caffe-tensorflow) for our use.
 
 ### Download flickr style dataset
 
