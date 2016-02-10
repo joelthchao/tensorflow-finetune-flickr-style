@@ -1,0 +1,44 @@
+I tensorflow/core/common_runtime/local_device.cc:25] Local device intra op parallelism threads: 32
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:88] Found device 0 with properties: 
+name: Tesla K40m
+major: 3 minor: 5 memoryClockRate (GHz) 0.745
+pciBusID 0000:05:00.0
+Total memory: 11.25GiB
+Free memory: 11.15GiB
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:112] DMA: 0 
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:122] 0:   Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:643] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:05:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_region_allocator.cc:47] Setting region size to 11377705370
+I tensorflow/core/common_runtime/local_session.cc:45] Local session inter op parallelism threads: 32
+2016-02-10 19:44:22.296913 Iter 20: Training Loss = 2.8392, Accuracy = 0.1000
+2016-02-10 19:44:37.397859 Iter 40: Training Loss = 2.8207, Accuracy = 0.1000
+2016-02-10 19:44:52.477623 Iter 60: Training Loss = 2.8653, Accuracy = 0.1400
+2016-02-10 19:45:07.455741 Iter 80: Training Loss = 2.7354, Accuracy = 0.1400
+2016-02-10 19:45:22.321581 Iter 100: Training Loss = 2.7453, Accuracy = 0.1200
+2016-02-10 19:45:37.366398 Iter 120: Training Loss = 2.7889, Accuracy = 0.2200
+2016-02-10 19:45:52.198182 Iter 140: Training Loss = 2.6468, Accuracy = 0.2000
+2016-02-10 19:46:07.138030 Iter 160: Training Loss = 2.7515, Accuracy = 0.1400
+2016-02-10 19:46:21.972835 Iter 180: Training Loss = 2.8239, Accuracy = 0.1600
+2016-02-10 19:46:36.879264 Iter 200: Training Loss = 2.7449, Accuracy = 0.1600
+2016-02-10 19:46:52.029270 Iter 220: Training Loss = 2.7727, Accuracy = 0.1800
+2016-02-10 19:47:07.171615 Iter 240: Training Loss = 2.7483, Accuracy = 0.1400
+2016-02-10 19:47:22.190170 Iter 260: Training Loss = 2.6880, Accuracy = 0.2800
+2016-02-10 19:47:37.241129 Iter 280: Training Loss = 2.7259, Accuracy = 0.1600
+2016-02-10 19:47:52.341997 Iter 300: Training Loss = 2.7181, Accuracy = 0.1800
+2016-02-10 19:48:07.603788 Iter 320: Training Loss = 2.6874, Accuracy = 0.2000
+2016-02-10 19:48:22.671804 Iter 340: Training Loss = 2.7065, Accuracy = 0.1800
+2016-02-10 19:48:37.584380 Iter 360: Training Loss = 2.6199, Accuracy = 0.2000
+2016-02-10 19:48:52.728980 Iter 380: Training Loss = 2.6831, Accuracy = 0.1600
+2016-02-10 19:49:07.917627 Iter 400: Training Loss = 2.7135, Accuracy = 0.1400
+2016-02-10 19:49:22.804866 Iter 420: Training Loss = 2.6694, Accuracy = 0.2000
+2016-02-10 19:49:37.877277 Iter 440: Training Loss = 2.7154, Accuracy = 0.1400
+2016-02-10 19:49:52.975109 Iter 460: Training Loss = 2.6224, Accuracy = 0.1600
+2016-02-10 19:50:08.013710 Iter 480: Training Loss = 2.7775, Accuracy = 0.1400
+2016-02-10 19:50:23.045544 Iter 500: Training Loss = 2.6879, Accuracy = 0.1600
+2016-02-10 19:50:38.058165 Iter 520: Training Loss = 2.6325, Accuracy = 0.1800
+2016-02-10 19:50:53.186669 Iter 540: Training Loss = 2.4613, Accuracy = 0.3000
+2016-02-10 19:51:08.081020 Iter 560: Training Loss = 2.6298, Accuracy = 0.2400
+2016-02-10 19:51:23.067064 Iter 580: Training Loss = 2.7325, Accuracy = 0.1800
+2016-02-10 19:51:38.210447 Iter 600: Training Loss = 2.7366, Accuracy = 0.2000
+2016-02-10 19:51:53.403916 Iter 620: Training Loss = 2.5829, Accuracy = 0.2400
+2016-02-10 19:54:46.389659 Iter 640: Testing Accuracy = 0.1588

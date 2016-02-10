@@ -30,4 +30,12 @@ test_list = '/path/to/data/flickr_style/test.txt'
 ```sh
 $ python finetune.py
 ```
+### Finetune result
+
+```sh
+// Fine-tuning result
+Iter 640: Testing Accuracy = 0.2801
+// From scratch result
+Iter 640: Testing Accuracy = 0.1588
+```
 
