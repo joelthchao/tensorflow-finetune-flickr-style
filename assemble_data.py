@@ -38,7 +38,7 @@ STYLE_MAPPING = [
 
 def main():
     if len(sys.argv) != 5:
-        print('Usage: python flick_dataset.py image_path train_file test_file images_per_style')
+        print('Usage: python assemble_data.py image_path train_file test_file images_per_style')
         return
 
     image_path = os.path.abspath(sys.argv[1])

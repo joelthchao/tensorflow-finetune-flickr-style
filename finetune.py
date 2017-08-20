@@ -18,14 +18,14 @@ def main():
 
     # Learning params
     learning_rate = 0.001
-    training_iters = 12800 # 10 epochs
+    training_iters = 12800
     batch_size = 50
     display_step = 20
-    test_step = 640 # 0.5 epoch
+    test_step = 640
 
     # Network params
     n_classes = 20
-    keep_rate = 0.3
+    keep_rate = 0.5
 
     # Graph input
     x = tf.placeholder(tf.float32, [batch_size, 227, 227, 3])
@@ -44,7 +44,7 @@ def main():
     accuracy = tf.reduce_mean(tf.cast(correct_pred, tf.float32))
 
     # Init
-    init = tf.initialize_all_variables()
+    init = tf.global_variables_initializer()
 
     # Load dataset
     dataset = Dataset(train_file, test_file)
@@ -83,6 +83,7 @@ def main():
      
             step += 1
         print('Finish!')
+
 
 if __name__ == '__main__':
     main()

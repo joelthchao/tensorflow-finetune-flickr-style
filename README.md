@@ -8,34 +8,30 @@ Thank @ethereon for his code. We modify the network.py from [caffe-tensorflow](h
 ### Download flickr style dataset
 
 ```sh
-# Download dataset in the current folder
-$ python assemble_data.py
+# Download dataset
+$ python assemble_data.py images train.txt test.txt 500
 ```
 
-### Download the trained model
+### Download the pre-trained model
 
-Please follow the tutorial and extract caffenet.npy
+Download link: [here](https://drive.google.com/open?id=0B1TxGXQOCIQQME1peW9USXBDME0)
+
+Or follow the tutorial and extract bvlc_alexnet.npy
 
 https://github.com/ethereon/caffe-tensorflow
 
-### Motified dataset path in finetune.py
 
-```sh
-# Dataset path
-train_list = '/path/to/data/flickr_style/train.txt'
-test_list = '/path/to/data/flickr_style/test.txt'
-```
 ### Lauch the finetune process
 
 ```sh
-$ python finetune.py
+$ python finetune.py train.txt test.txt bvlc_alexnet.npy
 ```
+
 ### Finetune result
 
 ```sh
 // Fine-tuning result
-Iter 640: Testing Accuracy = 0.2801
+Iter 1280: Testing Accuracy = 0.2380
 // From scratch result
-Iter 640: Testing Accuracy = 0.1588
+Iter 640: Testing Accuracy = 0.1045
 ```
-
