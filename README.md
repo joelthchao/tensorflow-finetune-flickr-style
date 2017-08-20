@@ -5,6 +5,9 @@ The details please refer to the example from the [Caffe website](http://caffe.be
 
 Thank @ethereon for his code. We modify the network.py from [caffe-tensorflow](https://github.com/ethereon/caffe-tensorflow) for our use.
 
+Thanks @sergeyk for flickr style dataset collection. We modify flickr.py from [vislab](https://github.com/sergeyk/vislab)
+
+
 ### Download flickr style dataset
 
 ```sh
@@ -31,7 +34,7 @@ $ python finetune.py train.txt test.txt bvlc_alexnet.npy
 
 ```sh
 // Fine-tuning result
-Iter 1280: Testing Accuracy = 0.2380
+Iter 1280: Testing Accuracy = 0.3250
 // From scratch result
-Iter 640: Testing Accuracy = 0.1045
+Iter 1280: Testing Accuracy = 0.1655
 ```
