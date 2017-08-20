@@ -57,24 +57,22 @@ class Dataset:
                 self.test_ptr = new_ptr
         else:
             return None, None
-        
+
         # Read images
         images = np.ndarray([batch_size, self.crop_size, self.crop_size, 3])
-        for i in xrange(len(paths)):
-            img = cv2.imread(paths[i])
+        for i, path in enumerate(paths):
+            img = cv2.imread(path)
             h, w, c = img.shape
-            assert c==3
-            
+            assert c == 3
             img = cv2.resize(img, (self.scale_size, self.scale_size))
             img = img.astype(np.float32)
             img -= self.mean
-            shift = int((self.scale_size-self.crop_size)/2)
-            img_crop = img[shift:shift+self.crop_size, shift:shift+self.crop_size, :]
+            shift = (self.scale_size - self.crop_size) // 2
+            img_crop = img[shift: shift + self.crop_size, shift: shift + self.crop_size, :]
             images[i] = img_crop
 
         # Expand labels
         one_hot_labels = np.zeros((batch_size, self.n_classes))
-        for i in xrange(len(labels)):
-            one_hot_labels[i][labels[i]] = 1
+        for i, label in enumerate(labels):
+            one_hot_labels[i][label] = 1
         return images, one_hot_labels
-
