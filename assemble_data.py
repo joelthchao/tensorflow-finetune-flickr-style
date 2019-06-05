@@ -66,7 +66,7 @@ def collect_image_style_url(url_file, photos_per_style):
             for url in urls:
                 print('{} {}'.format(url, class_id), file=f)
 
-    print('[Done] Url file saves to: {}'.format(img_info_file))
+    print('[Done] Url file saves to: {}'.format(url_file))
 
 
 def get_image_url_from_group(groups, num_images):
@@ -90,7 +90,11 @@ def get_image_url_from_group(groups, num_images):
             url = url.format(**params)
 
             # Make the request and ensure it succeeds.
-            page_data = requests.get(url).json()
+            try:
+                page_data = requests.get(url).json()
+            except:
+                print(requests.get(url))
+                raise
             if page_data['stat'] != 'ok':
                 raise Exception("Something is wrong: API returned {}".format(page_data['stat']))
 
